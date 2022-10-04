@@ -15,11 +15,40 @@
       width: 70%;
       margin: 0 auto;
     }
-    [class^="container"], [class^="col"], .sc-container{
+    /* [class^="container"], [class^="col"], .sc-container{
       background-color: rgba(185, 231, 232,.4);
       border: 1px solid black;
       margin-bottom: 20px;
       min-height: 80px;
+    } */
+    header{
+      height: 90px;
+      background-color: #2c3e50;
+      color: white;
+    }
+    .jumbotron{
+      height: 490px;
+      background-color: #31BC9C;
+      color: white;
+    }
+    .jumbotron img{
+      height: 200px;
+      color: white;
+    }
+    .portfolio img{
+      height: 200px;
+    }
+    .about{
+      background-color: #31BC9C;
+      color: white;
+    }
+    .f-text{
+      background-color: #355578;
+      color: white;
+    }
+    .f-copy{
+      background-color: #2c3e50;
+      color: white;
     }
     
   </style>
@@ -28,134 +57,137 @@
   <title>bootstrap-freelancer</title>
 </head>
 <body>
+ 
   <header>
-
-    <div class="container">
-
-      <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar w/ text</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-            </ul>
-            <span class="navbar-text">
-              Navbar text with an inline element
-            </span>
-          </div>
-        </div>
-      </nav>
+    <div class="container h-100">
+      <div class="row">
+        <div class="col"> LOGO</div>
+        <div class="col text-end d-lg-none">H</div>
+        <div class="col text-end d-none d-lg-block">MENU</div>
+      </div>
     </div>
-    
   </header>
 
-  <section>
 
-    <div class="container-fluid py-5 text-center">
-      <h1 class="display-5 fw-bold">Custom jumbotron</h1>
-      <p class="fs-4  text-center">WEB DESIGNER</p>
+  <div class="jumbotron">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          <div class="image"><img src="/layouts/img(1)/img/avatar.svg" alt=""></div>
+          <h1 class="fw-bold">START BOOTSTRAP</h1>
+          <div class="star">*</div>
+          <div class="text">GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</div>
+        </div>
+      </div>
     </div>
-  
-  </section>
+  </div>
 
 
-  <section>
+  <section class="portfolio">
+    <div class="container text-center">
+      <div class="row">
+        <h2 class="fw-bold">PORTFOLIO</h2>
+        <div class="star">*</div>
+      </div>
+    </div>
     <div class="container text-center">
       <div class="row">
         <div class="col-lg-4 col-md-6">
-          Column
+          <img src="/layouts/img(1)/img/cabin.png" alt="">
         </div>
         <div class="col-lg-4 col-md-6">
-          Column
+          <img src="/layouts/img(1)/img/cake.png" alt="">
         </div>
         <div class="col-lg-4 col-md-6">
-          Column
+          <img src="/layouts/img(1)/img/circus.png" alt="">
         </div>
         <div class="col-lg-4 col-md-6">
-          Column
+          <img src="/layouts/img(1)/img/game.png" alt="">
         </div>
         <div class="col-lg-4 col-md-6">
-          Column
+          <img src="/layouts/img(1)/img/safe.png" alt="">
         </div>
         <div class="col-lg-4 col-md-6">
-          Column
+          <img src="/layouts/img(1)/img/submarine.png" alt="">
         </div>
       </div>
     </div>
   </section>
 
-  <section>
+  <section class="about">
 
     <div class="container py-5 text-center">
-      <h4 class="display-5 fw-bold">Custom jumbotron</h4>
+      <h2 class="fw-bold">ABOUT</h2>
       <div class="row">
         <div class="col-lg-6 col-md-6 col-sm-12">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste et quibusdam veritatis impedit eius omnis molestiae, sequi, corrupti minus, illum ad excepturi amet officia nobis sit quaerat voluptatibus asperiores esse?</div>
         <div class="col-lg-6 col-md-6 col-sm-12">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo, libero. Blanditiis inventore architecto eum vel, nisi, corporis odio a asperiores quasi recusandae expedita animi placeat numquam veniam ad reprehenderit exercitationem?</div>
       </div>
     </div>
-
-
-  
   </section>
-  
 
-
-  <div class="container text-center">
-    <div class="row">
-      <div class="col-md-8 offset-md-2">
-        
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Example label</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label">Another label</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput" class="form-label">Example label</label>
-          <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder">
-        </div>
-        <div class="mb-3">
-          <label for="formGroupExampleInput2" class="form-label">Another label</label>
-          <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
-        </div>
+  <section>
+    <div class="container text-center">
+      <div class="row">
+        <h2 class="fw-bold">CONTACT ME</h2>
+        <div class="star">*</div>
       </div>
+    </div>
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Name">
+          </div>
+          <hr>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label"></label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Email Adress">
+          </div>
+          <hr>
+          <div class="mb-3">
+            <label for="formGroupExampleInput" class="form-label"></label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Phone Number">
+          </div>
+          <hr>
+          <div class="mb-3">
+            <label for="formGroupExampleInput2" class="form-label"></label>
+            <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Message">
+          </div>
+          <hr>
+          <button type="button" class="btn btn-success">Send</button>
+        </div>
+      </div>  
+    </div>
 
-  </div>
+  </section>
 
   <footer>
-    <section>
+    <section class="f-text">
       <div class="container-fluid text-center">
         <div class="row">
           <div class="col-lg-4 col-md-6">
-            Column
+            <h3>LOCATION</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <p>54243</p>
           </div>
           <div class="col-lg-4 col-md-6">
-            Column
+            <h3>AROUND THE WEB</h3>
+            <p>icone</p>
           </div>
           <div class="col-lg-4 col-md-6">
-            Column
+            <h3>ABOUT FREELANCER</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium delectus fugit rerum, iusto dolor hic, harum veniam modi dolorum illum voluptatibus magnam alias eaque..</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="f-copy">
 
       <div class="container-fluid py-5 text-center">
-        <h6>Copyright</h6>
+        <h6>Copyright your website 2019</h6>
       </div>
     
     </section>
